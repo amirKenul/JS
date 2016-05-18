@@ -1,0 +1,142 @@
+<html>
+<head>
+	<title> </title>
+	
+<style>
+.main{
+height:500px;
+weight:500px;
+background:red;
+}
+</style>
+
+
+
+
+</head>
+<body>
+ 
+ 
+ 
+ <div class="main">
+<!--  <script>
+	
+	
+ 
+
+	document.write(yarat("Efqan"));
+	
+ 
+ 
+ </script> -->
+ 
+ <script>
+ /*Self invoke funktion*/
+	var a = 0;
+	(function num(){
+		document.write("<br>Hello"+a);
+		a++;
+			num();
+			 if (num==100){
+			 
+			 break;
+			 }
+			
+			})();
+			
+			
+			
+			/*Sposobi predstavleniya obyektov*/
+	/*var sinif ={
+		telebe1:{
+			ad:"Ismail",
+			soyad:"Abbasov"},
+			
+		telebe2:{
+			ad:"Samir",
+			soyad:"Muelllim"
+			},
+			
+		telebe3:["Havi","Mak"]
+		
+		
+	}*/
+	
+	/*Vtoroy sposob*/
+	
+	/*var massiv = [
+	{
+		obyektmassiv:["okey","okey2"],
+		obyektmassiv1:["okey1","okey2"]
+	}, {
+			massivindex2:{
+				massivindex2array1:["alma","armud"]
+			},
+			massivindex3:{
+				massivindex3array2:["massivindex3array3","massivindex4array4"]
+			}
+		}]
+	
+	document.write(massiv[0].obyektmassiv[0]);*/
+	
+	
+	
+	
+	
+	/* prosmotri kod i poymi raznisu*/
+	
+	/*var obj2 = function(name,surname){
+		this.name=name,
+		this.surname=surname,
+		this.myFunc=function(){
+			document.write(this.name +" " + this.surname);
+			
+		}
+		
+		
+	}
+	
+	var student=new obj2("Arzu","Mammedzade");
+		student.myFunc();*/
+		
+		/*A esli ti zdelayesh vot tak vot*/
+		
+	/*	var obj2 = function(name, surname){
+			this.name=name,
+			this.surname=surname,
+			(function myFun(){
+			
+				document.write(this.name + " " + this.surname);})();
+		}	
+		
+			obj2("Arzu","Memmedzade");
+	
+	*/
+	
+	
+	/*
+	var massiv=[{
+  obyekt1massiv:["okey","okey1"],
+    obyekt1massiv1:["okey1","okey2"]
+
+
+},{
+  massivindex2:{
+    massivindex2array1:["alma","armud"]
+  },
+  massivindex3:{
+    massivindex3array2:["massivindex3array3","massivindex4array4"]
+  }
+}]
+
+document.write(massiv[1].massivindex2.massivindex2array1[1]);
+	*/
+ </script>
+ 
+ 
+ 
+ </div>
+
+ 
+</body>
+</html>
