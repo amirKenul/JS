@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="main.js"></script>
+	
+	<style>
+		
+		.cicleBut{
+		background-color:red;
+		animation: myanim 5s linear 2s infinite alternate;
+		}
+		
+		
+	@keyframes myfanim {
+    0%   { left:150px; top:0px;}
+    100%  { left:200px; top:0px;}
+		
+	</style>
+	
+</head>
+<body>
+<script>
+
+a=true;
+var button = function(){
+	
+	
+		
+		
+		if(a){
+		document.open();
+		document.write("<div class = 'firstDiv' style='width:500px;  height:100px; background-color:lightgray;position:absolute; z-index:0; top:10px;'>");
+		document.write("<div style='color:#78909c;font-family:serif;padding:28px 20px; font-size:15px;text-shadow:2px 2px #eceff1;'>TURN ME ONN</div>");
+		document.write("</div>");
+		document.write("<button class='cicleBut' onclick = 'button()' style='width:50px; height:50px; border-radius:25px; background-color:#ff4081; position:absolute; z-index:2;left:150px; top:20px;'></button>");
+			document.write("<div class = 'yol' style ='width:200px;position:absolute; height:45px; background-color:#f50057; border-radius:25px;z-index:1;left:151px; top:22px;'></div>");
+			
+			document.close();
+			
+				a=false;
+			
+			}else{
+			
+			document.open();
+			document.write("<div class = 'secondDiv' style='width:500px;  height:100px; background-color:lightgray;position:absolute; z-index:0;top:10px;'>")
+			document.write("<div style='color:#78909c;font-family:serif; float: right;padding:28px 20px; font-size:15px;text-shadow:2px 2px #eceff1;'>TURN ME OFF </div>");
+			("</div>");
+			
+			document.write("<button class='cicleBut' onclick = 'button()' style='width:50px; height:50px; border-radius:25px; background-color:#f48fb1; position:absolute; z-index:2; left:300px; top:11px; '> </button>");
+			document.write("<div class = 'yol' style='width:200px;position:absolute; height:45px; background-color:#880e4f; border-radius:25px;z-index:1;left:150px; top:13px;'></div>");
+				
+			document.close();
+			
+			a=true;
+		}
+
+}
+
+button();
+
+	
+
+</script>
+
+		
+
+
+
+
+
+
+
+</body>
+</html>

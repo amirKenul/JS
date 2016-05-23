@@ -1,0 +1,170 @@
+<html>
+<head>
+	<title> </title>
+	<script src="main18.js"></script>
+	
+	
+  <style>
+    #train {
+      position: relative;
+      cursor: pointer;
+	 
+    }
+	
+	
+	#circleBut{
+	position: relative;
+	
+	border-radius:50%;
+	background-color: red;
+	width:50px;
+	height:50px;
+	
+	
+	}
+	.onOff{
+	position:absolute;
+	width:150px;
+	height:50px;
+	background-color: pink;
+	border-radius:25px;
+	}
+  </style>
+</head>
+
+<body>
+
+  <img id="train" src="https://js.cx/clipart/train.gif">
+
+
+  <!--<script>
+  
+	
+    train.onclick = function() {
+	
+      var start = Date.now(); // сохранить время начала
+
+      var timer = setInterval(function() {
+        // вычислить сколько времени прошло из opts.duration
+        var timePassed = Date.now() - start;
+
+        train.style.left = timePassed / 5 + 'px';
+
+       if (timePassed > 500) clearInterval(timer);
+	  
+
+      }, 10);
+    }
+	</script>-->
+	
+	
+		<div class = "onOff">
+		<div  id = "circleBut"></div>
+		</div>
+		
+		
+		<script>
+			circleBut.onclick = function(){
+				var start = Date.now();
+				
+				var timer = setInterval(function(){
+				
+				var timePassed = Date.now() - start;
+				
+				circleBut.style.left = timePassed / 5 +'px';
+				
+				if (timePassed > 500) {
+				 
+				clearInterval(timer);
+				}
+				
+				
+				
+				/* if (timePassed > 250){
+	   document.write("<div class = 'circleBut' style='background-color:gray")}*/
+				
+				}, 10);
+			
+			}
+		
+		</script>
+		
+		
+		<script>
+		
+		var ata = {
+			xasiyyet:"tund",
+			mesuliyyet:"evin direyi",
+			ish:"millioner",
+			qanQruppu:"-3",
+			ataEvde: function(){
+				console.log(this.xasiyyet + " " +this.ish);
+				}
+				
+		}
+		
+		
+		var ana={
+			silah:"sevgi",
+			urey:"boyuk",
+			qanQruppu:"-2",
+			doyush:function(){
+			console.log(this.urey+" "+this.silah);
+			}
+		}
+		
+		
+		var child = {
+			yash:6
+		}
+		
+		child.__proto__ = ana;//adeten axrincidan informasiyani goturur;
+		child.__proto__ = ata;
+		
+		
+		console.log(child.qanQruppu);
+		
+		
+		
+			
+			//tapshiriq 2 ,alinmir.
+			
+			
+		var telebe = function(ad,soyad) {
+			this.ad=ad,
+			this.soyad=soyad
+			
+		}
+		
+		var codacademy=function(kurs,smen){
+				this.kurs=kurs,
+				this.smen=smen
+		}
+		
+		var bqu = function(facultet,sector){
+		this.facultet=facultet,
+		this.sector=sector
+		}
+		
+		var qvqaz = function(ad, soyad){
+		this.ad=ad,
+		this.soyad=soyad
+		}
+		
+		
+		codacademy.prototype = new telebe("Kenul","Amirmetova");
+		bqu.prototype = new telebe("Kenul","Amirmetova");
+		
+		var kenul = new codacademy("1kurs ", "seher smen");
+		var kenul = new bqu(" eko ", " multi ")
+		
+		console.log(kenul.kurs + kenul.smen +  codacademy.prototype.ad);
+		
+		</script>
+		
+		
+	
+	
+ 
+</body>
+</html>

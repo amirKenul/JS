@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="main20.js"></script>
+</head>
+<body>
+
+
+<style>
+
+
+
+.litlebottom{
+
+width:200px;
+height:200px;
+
+display:inline-block;
+}
+
+
+.parent{
+
+
+border:2px solid green;
+}
+
+.child{
+
+height:50px;
+background:blue;
+display:inline-block;
+margin:5px;
+}
+
+
+
+</style>
+
+
+<!--
+
+
+		<div class = "litlebottom" id="blue">
+			
+
+		</div>
+		
+		<div class = "litlebottom" id = "red">
+		
+			
+		
+		</div>
+		
+			<div class = "litlebottom" id = "green">
+		
+			
+		
+		</div>
+		
+		
+		<script>
+	
+var a = document.getElementById("blue");
+a.style.backgroundColor="pink";
+a.innerHTML="bum";//pocemu to sdvigayetsa;
+
+var b = document.getElementById("red");
+b.style.backgroundColor="red";
+
+var c = document.getElementById("green");
+c.style.backgroundColor="green";
+
+
+</script>
+
+<!--<script>
+	var myDiv=document.createElement("div");
+	var mySecondDiv =document.createElement("div");
+	mySecondDiv.setAttribute("class","child");
+	myDiv.setAttribute("id","manis");
+	myDiv.setAttribute("class","mydiv");
+	document.body.appendChild(myDiv);
+	mydiv.appendChild(mySecondDiv);
+
+</script>-->
+
+<script>
+
+
+
+
+
+
+var myFunk = function(width,say,column){
+
+
+		var bigDiv = document.createElement("div");
+
+		bigDiv.setAttribute("class","parent");
+		document.body.appendChild(bigDiv);
+		bigDiv.style.width=width+"px";
+	
+
+		for(i=1;i<=say;i++){
+
+		var littleDiv = document.createElement("div");
+		littleDiv.style.width=(width/column-10)+"px";
+		littleDiv.setAttribute("class","child");
+		bigDiv.appendChild(littleDiv);
+		
+
+}
+		
+}
+
+myFunk(1200,30,5);
+
+
+/*
+
+function main(width,say,column){
+	document.write("<div class='mainDiv' style='width:"+width+"px;'> ");
+	
+	
+	for(i=0; i<say; i ++)
+	{
+			document.write("<div class='icDiv' style='width:"+((width-column*10)/column)+"px;'></div>")
+	}
+	
+	document.write("</div>");
+}
+
+
+main(100, 50, 7);
+
+
+*/
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

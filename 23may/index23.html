@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title> </title>
+	
+	
+	<style>
+	
+	html, body, section, ul{
+	padding:0;
+	margin:0;}
+	
+	
+	h3{
+	margin:0;
+	}
+	
+	
+	.menu{
+	position:fixed;
+	height:50px;
+	width:100%;
+	background:pink;
+	}
+	
+	.menu ul li{
+	list-style-type:none;
+	display:inline-block; 
+	padding:0 20px;
+	
+	
+	}
+	.menu ul{
+		margin:0;
+		padding:0;
+		text-align:center;
+	}
+	.menu a {
+	
+	line-height:50px;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:white;}
+	
+	.boxGreen{
+	
+	height:700px;
+	width:100%;
+	background:green;
+	padding-top:50px;
+	
+	}
+	
+	
+	.boxBlue{
+	height:700px;
+	width:100%;
+	background:blue;}
+	
+	
+	.boxRed{
+	
+	height:700px;
+	width:100%;
+	background:red;
+	}
+	
+	</style>
+
+
+
+
+</head>
+<body onresize="func()">
+
+
+
+	<section id ="menu" class="menu">
+			<ul>
+			<li><a href = "#">Home</a></li>
+			<li><a href = "#link1">Link1</a></li>
+			<li><a href = "#link2">Link2</a></li>
+			<li><a href = "#link3">Link3</a></li>
+			<li><a href = "#link3">Link3</a></li>
+			</ul>	
+	
+	</section>
+	
+	<section id = "link1" class="boxGreen">
+		<h3>Link1</h3>
+			
+	
+	</section>
+	<section  id = "link2" class = "boxBlue">
+	<h3>Link2</h3>
+	
+	</section>
+	
+	<section id = "link3" class = "boxRed">
+		<h3>Link3</h3>
+	
+	</section>
+
+
+  
+  <script>
+  
+		function func(){
+			  a=window.innerHeight;
+			  return a;
+			  }  
+  
+		document.getElemenstById("menu").getElementsBy
+  
+ 
+  </script>
+  
+ 
+ 
+</body>
+</html>
